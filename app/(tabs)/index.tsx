@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 
 import AlarmField from "@/components/alarm-field";
 import ScrollView from "@/components/scroll-view";
+import { Link } from "expo-router";
 export default function HomeScreen() {
     return (
         <ScrollView>
@@ -25,6 +26,7 @@ export default function HomeScreen() {
                 time="8:00 AM"
                 onToggle={(val) => console.log("Toggled:", val)}
             />
+            <Link href="/wake">Open Modal</Link>
         </ScrollView>
     );
 }
